@@ -421,6 +421,10 @@ STEPS
     line-height: 1;
 }
 
+.step__number-one {
+    margin-right: 7.21px;
+}
+
 .step__description {
     display: flex;
     flex-direction: column;
