@@ -1132,6 +1132,11 @@ footer {
     align-items: center;
 }
 
+.footer__logo a {
+    display: flex;
+    align-items: center;
+}
+
 .footer__logo--img {
     width: 32px;
     height: 32px;
@@ -1178,6 +1183,10 @@ footer {
     height: 16px;
 }
 
+.no-cursor {
+    cursor: not-allowed;
+}
+
 /* LAPTOPS */
 
 @media (max-width: 1280px) {
@@ -1222,6 +1231,10 @@ footer {
         padding: 80px 0;
     }
 
+    .nav__links {
+        display: none;
+    }
+
     header .row {
         flex-direction: column;
         align-items: center;
@@ -1262,8 +1275,14 @@ footer {
         width: 50%;
     }
 
-    .nav__links {
-        display: none;
+    .testimonial__bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial__buttons {
+        margin-top: 12px;
     }
 
     .start__row {
@@ -1294,36 +1313,6 @@ footer {
         font-size: 15px;
     }
 
-    #steps .row,
-    #values .row {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    #quality .row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .quality__description {
-        margin: 0 0 24px 0;
-    }
-
-    .values__description,
-    .values__img,
-    .quality__img--wrapper,
-    .quality__description {
-        width: 100%;
-        max-width: 448px;
-    }
-
-    #steps .row {
-        flex-flow: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
     .feature {
         width: 50%;
     }
@@ -1338,6 +1327,37 @@ footer {
     .feature__text {
         margin-top: 8px;
         margin-left: 0;
+    }
+
+
+    #steps .row,
+    #values .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #quality .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quality__description {
+        margin: 0 0 36px 0;
+    }
+
+    .values__description,
+    .values__img,
+    .quality__img--wrapper,
+    .quality__description {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    #steps .row {
+        flex-flow: wrap-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .steps__img--wrapper {
